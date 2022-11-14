@@ -1,0 +1,15 @@
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.csproj.AssemblyReference.cache
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.AssemblyInfoInputs.cache
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.AssemblyInfo.cs
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.csproj.CoreCompileInputs.cache
+C:\Users\q5481\source\repos\regExp\regExp\bin\Debug\net6.0\regExp.exe
+C:\Users\q5481\source\repos\regExp\regExp\bin\Debug\net6.0\regExp.deps.json
+C:\Users\q5481\source\repos\regExp\regExp\bin\Debug\net6.0\regExp.runtimeconfig.json
+C:\Users\q5481\source\repos\regExp\regExp\bin\Debug\net6.0\regExp.dll
+C:\Users\q5481\source\repos\regExp\regExp\bin\Debug\net6.0\regExp.pdb
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.dll
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\refint\regExp.dll
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.pdb
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\regExp.genruntimeconfig.cache
+C:\Users\q5481\source\repos\regExp\regExp\obj\Debug\net6.0\ref\regExp.dll

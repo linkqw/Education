@@ -1,0 +1,16 @@
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\bin\Debug\net5.0\regexp.exe
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\bin\Debug\net5.0\regexp.deps.json
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\bin\Debug\net5.0\regexp.runtimeconfig.json
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\bin\Debug\net5.0\regexp.runtimeconfig.dev.json
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\bin\Debug\net5.0\regexp.dll
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\bin\Debug\net5.0\ref\regexp.dll
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\bin\Debug\net5.0\regexp.pdb
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.csproj.AssemblyReference.cache
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.AssemblyInfoInputs.cache
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.AssemblyInfo.cs
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.csproj.CoreCompileInputs.cache
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.dll
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\ref\regexp.dll
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.pdb
+C:\Users\user.COMP-01\Desktop\265\isupov\regexp\regexp\obj\Debug\net5.0\regexp.genruntimeconfig.cache
