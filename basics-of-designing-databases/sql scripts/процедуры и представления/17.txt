@@ -1,0 +1,11 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `olympiaddb`.`seventeen` AS
+    SELECT 
+        `olympiaddb`.`employeeschedule`.`employeeId` AS Id_Сотрудника,
+        COUNT(0) AS Смены
+    FROM
+        olympiaddb.employeeschedule
+    GROUP BY olympiaddb.employeeschedule.employeeId -- групировка

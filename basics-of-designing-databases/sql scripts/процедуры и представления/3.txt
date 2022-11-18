@@ -1,0 +1,7 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `three`(in routeNum int)
+BEGIN
+	select trip.departureTime as Время_отправления, timediff(trip.departureTime, -route.travelTime) as Время_прибытия, -- сложение врмени отбытия и времени в пути
+		dayname(trip.departureDate)
+    from trip, route
+    where trip.routeId = routeNum and route.routeId = routeNum; -- условия соединения
+END

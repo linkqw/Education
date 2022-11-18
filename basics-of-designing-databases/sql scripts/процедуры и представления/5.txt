@@ -1,0 +1,8 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `five`(in sName nvarchar(30))
+BEGIN
+	select r.pavilionPresence as Наличие_павилиона, count(rsl.routeId) as Количество_маршрутов
+    from routeStop r, routeStopList rsl
+    where r.stopId = rsl.stopId /* условие соединения таблиц */
+    group by r.stopName /* группировка по названию остановки */
+    having r.stopName = sName /* проверка соответствия названия с данным */;
+END

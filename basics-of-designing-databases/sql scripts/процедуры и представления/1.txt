@@ -1,0 +1,9 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `one`(in tType nvarchar(20))
+BEGIN
+	select r.routeId as Номер_маршрута, r.startPoint as Начало_маршрута, r.endPoint as Конец_маршрута,
+		r.travelTime as Время_в_пути
+    from route r
+    inner join transportType t on r.transportTypeId = t.typeId -- соединение с таблицей видов транспорта
+    where t.typeName = tType -- проверка на совпадение с введенным типом
+    order by r.transportTypeId; -- сортировка по номеру маршрута
+END

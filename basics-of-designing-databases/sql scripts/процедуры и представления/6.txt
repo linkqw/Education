@@ -1,0 +1,9 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `six`(in tripId int)
+BEGIN
+	select routeStop.stopName as Остановка, trip.departureTime as Время_отправления, 
+		timediff(trip.departureTime, -route.travelTime) as Время_прибытия, route.travelTime as Время_в_пути, -- сложение времени
+			sum(routeStopList.distanceToNextStop) as Пройденное_расстояние -- сложение расстояний между остановками
+    from routeStop, trip, route, routeStopList
+    where trip.tripId = tripId and trip.routeId = route.routeId and routeStop.stopName = route.startPoint -- условия соединения
+		and routeStopList.routeId = route.routeId;
+END

@@ -1,0 +1,15 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `olympiaddb`.`threeteen` AS
+    SELECT 
+        `olympiaddb`.`route`.`routeId` AS `routeId`,
+        `olympiaddb`.`changesintrip`.`changeReason` AS `changeReason`
+    FROM
+        ((`olympiaddb`.`route`
+        JOIN `olympiaddb`.`trip`)
+        JOIN `olympiaddb`.`changesintrip`) -- соединения
+    WHERE
+        ((`olympiaddb`.`changesintrip`.`tripId` = `olympiaddb`.`trip`.`tripId`) -- условия соединения
+            AND (`olympiaddb`.`trip`.`routeId` = `olympiaddb`.`route`.`routeId`))

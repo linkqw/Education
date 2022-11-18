@@ -1,0 +1,9 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `eight`(in carrierName nvarchar(50))
+BEGIN
+	select distinct r.routeId as Номер_маршрута, r.startPoint as Начало_маршрута, r.endPoint as Конец_маршрута,
+		r.travelTime as Время_в_пути, t.typeName
+    from route r, transportType t, employeeSchedule, employee, carrier
+    where carrierName = carrier.carrierName -- совпадение наименований перевозчика
+		and carrier.carrierId = r.carrierId -- совпадение id перевозчика в 'таблицах перевозчик' и 'маршрут'
+		and r.transportTypeId = t.typeId; -- совпадение типов транспорта
+END

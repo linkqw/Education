@@ -1,0 +1,12 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `four`(in routeNum int)
+BEGIN
+	-- определение начала и конца маршрута
+	select route.startPoint as Начало_маршрута, route.endPoint as Конец_маршрута
+    from route
+    where route.routeId = routeNum; -- сравнение с данным маршрутом
+    
+    -- определение остановок маршрута
+    select routeStop.stopName as Остановки
+    from routeStop
+    inner join routeStopList on routeStopList.routeId = routeNum and routeStopList.stopId = routeStop.stopId; -- соединение 
+END

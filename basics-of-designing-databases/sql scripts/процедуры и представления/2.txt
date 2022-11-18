@@ -1,0 +1,9 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `two`(in stopName nvarchar(30))
+BEGIN
+	select r.routeId as Номер_маршрута, r.startPoint as Начало_маршрута, r.endPoint as Конец_маршрута,
+		r.travelTime as Время_в_пути, transportType.typeName as Вид_транспорта
+    from routeStop s
+    inner join routeStopList rsl on s.stopId = rsl.stopId and s.stopName = stopName -- соединение с таблицей остановок 
+    inner join route r on r.routeId = rsl.routeId -- соединение с таблицей маршрутов
+    inner join transportType on r.transportTypeId = transportType.typeId; -- соединение с таблицей видов транспорта
+END

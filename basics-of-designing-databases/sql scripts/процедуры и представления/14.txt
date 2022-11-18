@@ -1,0 +1,6 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `fourteen`(in routeNum int)
+BEGIN
+	select count(trip.routeId) as Количество, month(now()) as Месяц -- текущий месяц
+    from trip
+    where trip.routeId = routeId and month(now()) = month(trip.departureDate); -- сравнение с текущим месяцем
+END

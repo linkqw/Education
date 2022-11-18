@@ -1,0 +1,8 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `seven`(in routeNum int)
+BEGIN
+	select carrier.carrierName, transportType.typeName
+    from carrier 
+    left join route on carrier.carrierId = route.routeId -- условие соединения
+    left join transportType on transportType.typeId = route.transportTypeId -- условие соединения
+    where route.routeId = routeNum; -- сравнение с введенным маршрутом;
+END

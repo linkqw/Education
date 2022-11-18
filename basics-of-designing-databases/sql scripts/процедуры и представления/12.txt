@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `twelve`(in routeNum int, in depTime time, in depDate date)
+BEGIN
+	/* добавление нового рейса в маршрут */
+	update trip, route
+    set
+		trip.routeId = routeNum,
+        trip.departureTime = depTime,
+        trip.departureDate = depDate
+	where trip.routeId = routeNum and route.routeId = trip.routeId;
+        
+END
